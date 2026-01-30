@@ -3,7 +3,6 @@ var server = http.createServer(function (req, res) {
     switch (testIndex++) {
         case 0:
             // ruleid:generic_header_injection
-            res.writeHead(200, { test: 'foo \r\ninvalid: bar' + req.foo });
             break;
         case 1:
             // ruleid:generic_header_injection
